@@ -160,6 +160,7 @@ def assign_moves(team):
         move_1 = choose_move_1(pkmn)
         move_2 = choose_move_2(pkmn, move_1)
         if move_2 == None:
+            pokemon_moves.append((move_1))
             continue
         move_3 = choose_move_3(pkmn, move_1, move_2)
         move_4 = choose_move_4(pkmn, move_1, move_2, move_3)
